@@ -25,8 +25,8 @@ public class Server {
                 try (Socket client = sock.accept()) {
                     PrintWriter pout = new
                             PrintWriter(client.getOutputStream(), true);
-                    
-                    pout.println("Hola, soy Chito_R20");
+
+                    pout.println(new java.util.Date().toString());
 
                 }
                 
