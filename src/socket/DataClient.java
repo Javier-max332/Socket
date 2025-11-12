@@ -18,7 +18,7 @@ public class DataClient {
     
     public static void main(String[] args) {
         try {
-            Socket sock = new Socket("127.0.0.1", 6013);
+            Socket sock = new Socket("10.10.13.209", 6013);
             InputStream in = sock.getInputStream();
             
             BufferedReader bin = new BufferedReader
